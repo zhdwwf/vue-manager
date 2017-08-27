@@ -2,16 +2,16 @@
   <div class="dashboard">
     <Row :gutter="16">
       <Col :lg="6" :md="12">
-        <VmStateOverView color="#41b883" icon="fa fa-user" title="New Users" count="996"></VmStateOverView>
+        <VmStateOverView color="#41b883" icon="fa fa-user" title="注册用户" count="996"></VmStateOverView>
       </Col>
       <Col :lg="6" :md="12">
-        <VmStateOverView color="#1d8ce0" icon="fa fa-eye" title="Page Views" count="109009"></VmStateOverView>
+        <VmStateOverView color="#1d8ce0" icon="fa fa-eye" title="交易" count="109009"></VmStateOverView>
       </Col>
       <Col :lg="6" :md="12">
-        <VmStateOverView color="#ffa000" icon="fa fa-pencil" title="Comments" count="1010"></VmStateOverView>
+        <VmStateOverView color="#ffa000" icon="fa fa-pencil" title="课程" count="1010"></VmStateOverView>
       </Col>
       <Col :lg="6" :md="12">
-        <VmStateOverView color="#f60000" icon="fa fa-download" title="Downloads" count="9960"></VmStateOverView>
+        <VmStateOverView color="#f60000" icon="fa fa-download" title="课件下载" count="9960"></VmStateOverView>
       </Col>
     </Row>
     <Row :gutter="16">
@@ -91,14 +91,14 @@ export default {
       dataUserPreview: {
         brief: {
           photo: require('@/assets/img/photo.jpg'),
-          name: 'Angla Cool',
-          role: 'Administrator'
+          name: '张大伟',
+          role: '管理员'
         },
         property: [
           {
             icon: 'fa fa-user',
-            key: 'Sex',
-            value: 'M'
+            key: '性别',
+            value: '男'
           },
           {
             icon: 'fa fa-heart',
@@ -107,12 +107,12 @@ export default {
           },
           {
             icon: 'fa fa-calendar',
-            key: 'Register',
+            key: '注册时间',
             value: '2017-8-9 8:00'
           },
           {
             icon: 'fa fa-calendar',
-            key: 'Latest Login',
+            key: '最近登录',
             value: '2017-9-9 9:10'
           }
         ]

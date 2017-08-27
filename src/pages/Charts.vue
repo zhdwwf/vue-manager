@@ -2,7 +2,7 @@
   <div class="charts">
     <Row :gutter="16">
       <Col span="12">
-        <VmChartBarLine title="Bar Chart" :xAxisData="dataBar1.xAxisData" :series="dataBar1.series">
+        <VmChartBarLine title="柱状图" :xAxisData="dataBar1.xAxisData" :series="dataBar1.series">
         </VmChartBarLine>
       </Col>
       <Col span="12">

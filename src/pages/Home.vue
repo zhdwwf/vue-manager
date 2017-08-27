@@ -3,17 +3,17 @@
     <Row class="header" type="flex" align="middle">
       <div class="logo">
         <img src="../assets/img/logo.png" height="30" alt="">
-        <span>VUE</span>MANAGER <Tag>beta</Tag>
+        <span>股牛</span>教师端 <Tag>beta</Tag>
       </div>
       <VmMsgPush style="margin-left:20px" :data="msgPushData"></VmMsgPush>
       <Dropdown class="login-info" placement="bottom-end">
         <Button type="ghost">
-            <img src="../assets/img/photo.jpg" height="30" alt="">Admin
+            <img src="../assets/img/photo.jpg" height="30" alt="">管理员
             <Icon type="arrow-down-b"></Icon>
         </Button> 
         <Dropdown-menu slot="list">
-            <Dropdown-item divided><i class="fa fa-key"></i>Log out</Dropdown-item>
-            <Dropdown-item divided><i class="fa fa-cog"></i>Setting</Dropdown-item>
+          <Dropdown-item divided><i class="fa fa-cog"></i>设置</Dropdown-item>
+          <Dropdown-item divided><i class="fa fa-key"></i>注销</Dropdown-item>
         </Dropdown-menu>
       </Dropdown>
     </Row>   
@@ -22,7 +22,7 @@
           <Menu-item name="Dashboard">
               <router-link to="/">
                 <i class="fa fa-dashboard"></i>
-                Dashboard  
+                仪表盘  
               </router-link>
           </Menu-item>
           <Menu-item name="Widget">
@@ -94,7 +94,7 @@
       <p class="vm-author">vue-manager designed by <a href="https://github.com/luosijie" target="_blank">Jesse Luo</a></p> 
     </div>
   </div>
-  </div>
+  
 </template>
 <script>
 import VmMsgPush from '@/components/vm-msg-push.vue'
